@@ -1,0 +1,129 @@
+
+body {
+	text-align: center;
+	overflow-x: hidden;
+	resize: none;
+	background-color: #333;
+}
+
+/*footer*/
+
+footer{
+	background-color: #964B13;
+    border-top: .1em solid #fff;
+    position: absolute;
+    margin: 0 auto;
+    width: 100%;
+    margin-top: -21px;
+}
+
+footer
+p {
+	color: #BEBACC;
+}
+
+#endtag {
+	font-family: 'Poiret One', cursive;
+	font-size: .8em;
+	margin-top: 1.5em;
+	color: #2A97FF;
+}
+
+.container
+a {
+	text-decoration: none;
+	color: #BEBACC;
+	font-size: .9em;
+}
+
+.container 
+h2 {
+	color: #fff;
+
+}
+
+.logos {
+	margin-right: auto;
+	margin-left: auto;
+}
+/*header*/
+.navbar-inverse {
+background-color: #BEBACC;
+position: absolute;
+}
+
+
+/* background images */
+
+.slideOne,
+.slideTwo,
+.slideThree,
+.slideFour,
+.slideFive{
+	position: relative;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.slideOne {
+	background-image: url('image/background.jpg');
+}
+
+.slideTwo {
+	background-image: url('image/skyline.jpg');
+}
+
+.slideThree {
+	background-image: url('image/clouds.jpg');
+	overflow-x: hidden;
+	overflow-y:hidden;
+}
+
+.slideFour {
+	background-image: url('image/summer-road.jpg');
+}
+
+.slideFive {
+	background-image: url('image/island.jpg');
+}
+
+.slideOne {
+	margin-top: 75px;
+}
+
+
+/*content section*/
+.jumbotron {
+	margin-bottom: 0;
+	min-height: 800px;
+		background-color: #333;
+}
+
+.container {
+	margin-top:0;
+}
+
+
+.loc {
+	background-color: #BEBACC;
+	border-radius: 15px;
+	width: 300px;
+	height: 300px;
+	padding-top: 5px;
+	margin-top: 8em;
+}
+
+.loc h3{
+	margin-top: -1.5px;
+}
+
+.plane_logo {
+	height: 50px;
+	width: 75px;
+}
+
+.plane{
+	margin-right: -150%;
+}
+
+
