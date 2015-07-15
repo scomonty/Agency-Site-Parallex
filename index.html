@@ -11,29 +11,41 @@
 <body>
 
 <!-- Header  -->
-
 	<div class="navbar-wrapper">
       <div class="container">
 		<nav class='navbar navbar-inverse navbar-fixed-top'>
 		<div class='continer-fluid'>
 			<div class='navbar-header'>
+				<a href='#slideOne' onclick="$('.slideOne').animatescroll({scrollSpeed:4000,easing:'easeInOutSine'})"><h1>SloanHealy</h1></a>
 				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
-              </button>
-				<h1><img class='plane_logo' src='css/image/pilot.png'>SloanHealy	
-			</h1>
+              </button>			
+			</div>
+			<div id="navbar" class="navbar-collapse collapse">
+				<ul class='nav navbar-nav'>
+					<li><a href='#slideOne' onclick="$('.slideOne').animatescroll({scrollSpeed:4000,easing:'easeInOutSine'})"><img class='plane_logo' src='css/image/pilot.png'></a></li>
+					<li><a href="#sec-five" id='words' class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">ABOUT US<span class="caret"></span></a>
+					<ul class="dropdown-menu dropdown-menu-left" role="menu">
+						<li id='words'><a href='#slideThree' onclick="$('.slideThree').animatescroll({scrollSpeed:4000,easing:'easeInOutSine'})">OUR STORY</a></li>
+						<li id='words'><a href='#slideThree' onclick="$('.new').animatescroll({scrollSpeed:4000,easing:'easeInOutSine'})">A NEW WAY</a></li>
+						<li id='words'><a href='#slideThree' onclick="$('.mission').animatescroll({scrollSpeed:4000,easing:'easeInOutSine'})">OUR MISSION</a></li>
+					</ul>
+					<li id='words'><a href='#slideTwo' onclick="$('.slideTwo').animatescroll({scrollSpeed:4000,easing:'easeInOutSine'})">LOCATION</a></li>
+					<li id='words'><a href='#slideFour' onclick="$('.slideFour').animatescroll({scrollSpeed:4000,easing:'easeInOutSine'})">WHO WE ARE</a></li>			
+		          	<li id='words'><a href='#slideFive' onclick="$('.Five').animatescroll({scrollSpeed:4000,easing:'easeInOutSine'})">WHAT WE DO</a></li>
+      			</ul>
 			</div>
 		</div>
-	</nav>
-</div>
-</div>
+		</nav>
+	  </div>
+	</div>
 
 <!-- content -->
 	<div class='jumbotron slideOne'>
-		<div class='container'>
+		<div class='container cont'>
 			<h1>A Different Kind of <br>Advertising Agency</h1>
 			<h2>&#8226; Lorem &#8226; Ipsum &#8226; Dolor &#8226;<h2>
 				<div class='col-md-4 plane'
@@ -43,35 +55,11 @@
 		</div>
 	</div>
 </div>
-	<div class='jumbotron slideTwo'
-	data-bottom-top="margin-top: -100px;" 
-	data-top="margin-top: 0px;">
-		<div class='container'
-		data-top="margin-top: 10px;" 
-	data-bottom="margin-top: -75px;">
-			<h1>Two Locations</h1>		
-		</div>
-		<div class='container'>
-			<div class='col-md-4 loc col-md-offset-2'
-			data-100-bottom='opacity: 0;'
-			data-100-top='opacity: 1;'>
-				<img src='css/image/office-building.png'>
-				<h3>Chandler, Arizona</h3>
-			</div>
-
-			<div class='col-md-4 loc col-md-offset-2'
-			data-100-bottom='opacity: 0;'
-			data-100-top='opacity: 1;'>
-				<img src='css/image/buildingtwo.png'>
-				<h3>Irvine, California</h3>
-			</div>
-			</div>
-		</div>
-	</div>
+	
 	<div class='jumbotron slideThree'
 	data-bottom-top="margin-top: -100px;" 
 	data-top="margin-top: 0px;">
-		<div class='container'>
+		<div class='container Three'>
 			<div class='col-md-12'
 			data-bottom-top='opacity: 0;'
 			data-100-top='opacity: 1';>
@@ -87,18 +75,43 @@
 			<div class='col-md-7'
 			data-100-bottom='right: -150%;'
 			data-bottom='right: 0%;'>
-				<h1>A New Way of Advertising</h1>
+				<h1 class='new'>A New Way of Advertising</h1>
 				<p>Morbi faucibus, risus at eleifend blandit, velit lectus porttitor magna, sed mollis nunc lectus at nibh. Aliquam sagittis elit id nibh gravida, ut ullamcorper justo dignissim. Suspendisse potenti. Mauris condimentum sagittis mollis. Vestibulum et erat quam. Nulla sodales sem sed ante vulputate ullamcorper. Vestibulum lobortis risus sit amet nulla suscipit sagittis. Ut lacinia, erat ut rhoncus molestie, eros quam semper quam, eget eleifend erat nunc ut velit. Aenean sit amet nisi sed sem interdum porta. Quisque ac feugiat leo, ac rutrum felis.</p>
 			</div>
 				<div class='col-md-5'
 			data-200-bottom='left: -150%;'
 			data-bottom='left: 0%;'>
-				<h1>Our Mission</h1>
+				<h1 class='mission'>Our Mission</h1>
 				<p>Phasellus ut molestie velit. In venenatis enim at iaculis blandit. Sed ac turpis non magna congue imperdiet sit amet ut turpis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ut purus ut lectus laoreet hendrerit. Vivamus ullamcorper, elit quis viverra tempor, lorem tortor tincidunt lorem, quis volutpat erat ipsum ac quam. Fusce id eros in justo volutpat pretium. In interdum pretium turpis vitae blandit. Pellentesque hendrerit magna vitae ultricies semper. Nunc rutrum vehicula metus nec accumsan. Proin egestas libero vitae ante pellentesque, in congue nisi dapibus. Vestibulum faucibus molestie justo, ac porta libero mollis ut. </p>
 					<br />
 					<br />
 			</div>
 			</div>
+	</div>
+	<div class='jumbotron slideTwo'
+	data-bottom-top="margin-top: -100px;" 
+	data-top="margin-top: 0px;">
+		<div class='container'
+		data-top="margin-top: 10px;" 
+	data-bottom="margin-top: -75px;">
+			<h1>Two Locations</h1>		
+		</div>
+		<div class='container'>
+			<div class='col-md-4 loc col-md-offset-2'
+			data-bottom-top='margin-top: 0px;'
+			data-top-bottom='margin-top: 100px';>
+				<img src='css/image/office-building.png'>
+				<h3>Chandler, Arizona</h3>
+			</div>
+
+			<div class='col-md-4 loc col-md-offset-2'
+			data-bottom-top='margin-top: 0px;'
+			data-top-bottom='margin-top: 100px';>
+				<img src='css/image/buildingtwo.png'>
+				<h3>Irvine, California</h3>
+			</div>
+			</div>
+		</div>
 	</div>
 	<div class='jumbotron slideFour' 
 	data-bottom-top="margin-top: -100px;" 
@@ -154,12 +167,11 @@
 	<div class='jumbotron slideFive'
 	data-bottom-top="margin-top: -100px;" 
 	data-top="margin-top: -50px;">
-		<div class='container'>
+		<div class='container Five'>
 			<h1>Who We Work With</h1>
 		</div>
-		</div>
 	</div>
-
+<img class='grass' src='css/image/grass.png'>
 <!-- Footer -->
 
 	<footer>
@@ -194,5 +206,6 @@
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/skrollr.min.js"></script>
 	<script> var s = skrollr.init();</script>
+	<script src="js/animatescroll.js"></script>
 </body>
 </html>

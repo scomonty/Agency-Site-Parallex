@@ -48,9 +48,23 @@ h2 {
 }
 /*header*/
 .navbar-inverse {
-background-color: #BEBACC;
-position: absolute;
+background-color: #964B13;
+margin-right: auto;
+margin-left: auto;
+width: 85%;
+border-radius: 0 0 10px 10px;
+opacity: .9;
 }
+.navbar-header h1 {
+	margin-left: 10px;
+}
+
+#navbar #words {
+	font-size: 1.4em;
+	margin-top: 22px;
+}
+
+
 
 
 /* background images */
@@ -63,10 +77,14 @@ position: absolute;
 	position: relative;
 	background-repeat: no-repeat;
 	background-position: center;
+	background-size: cover;
 }
 
 .slideOne {
 	background-image: url('image/background.jpg');
+	text-shadow: 5px 8px 10px #222; /* offset horizontal, offset vertical, blur, color */
+	color: white;
+
 }
 
 .slideTwo {
@@ -88,7 +106,13 @@ position: absolute;
 }
 
 .slideOne {
-	margin-top: 75px;
+	margin-top: 0;
+}
+
+.grass {
+	width: 100%;
+	margin-top: -104px;
+	position: relative;
 }
 
 
@@ -96,7 +120,7 @@ position: absolute;
 .jumbotron {
 	margin-bottom: 0;
 	min-height: 800px;
-		background-color: #333;
+	background-color: #333;
 }
 
 .container {
@@ -111,6 +135,7 @@ position: absolute;
 	height: 300px;
 	padding-top: 5px;
 	margin-top: 8em;
+	box-shadow: 0 15px 20px -10px rgba(0,0,0, .8);
 }
 
 .loc h3{
@@ -118,12 +143,83 @@ position: absolute;
 }
 
 .plane_logo {
-	height: 50px;
-	width: 75px;
+	height: 70px;
+	width: 95px;
 }
 
 .plane{
 	margin-right: -150%;
 }
 
+h1 {
+text-shadow: 5px 8px 10px #222; /* offset bottom, offset right, blur, color */
+color: white;
+}
 
+.cont {
+
+	margin-top: 65px;
+}
+
+.navbar-toggle {
+text-align: center;
+}
+
+
+.navbar-inverse .navbar-nav>.open>a, 
+.navbar-inverse .navbar-nav>.open>a:focus, 
+.navbar-inverse .navbar-nav>.open>a:hover {
+	background-color: #964B13;
+}
+
+
+
+/*media queries*/
+
+@media screen and (max-width: 1021px) {
+	#navbar #words {
+	font-size: 1em;
+	margin-top: 25px;
+}
+}
+
+@media screen and (max-width: 883px) {
+.plane_logo {
+	height: 45px;
+	width: 70px;
+}
+.navbar-header h1 {
+	font-size: 26px;
+}
+	#navbar #words {
+	font-size: .9em;
+	margin-top: 15px;
+}
+
+}
+
+
+@media screen and (max-width: 767px) {
+	#navbar #words {
+	font-size: 1.5em;
+	margin-top: 0;
+}
+.navbar-header h1 {
+	font-size: 36px;
+	display: inline-block;
+}
+.navbar-toggle {
+	margin-top: 23px;
+}
+}
+
+@media screen and (max-width: 314px) {
+
+.navbar-header h1 {
+	font-size: 26px;
+	display: inline-block;
+}
+.navbar-toggle {
+	margin-top: 15px;
+}
+}
