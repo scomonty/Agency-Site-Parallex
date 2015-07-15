@@ -59,7 +59,7 @@ opacity: .9;
 	margin-left: 10px;
 }
 
-#navbar #words {
+#navbar .words {
 	font-size: 1.4em;
 	margin-top: 22px;
 }
@@ -177,7 +177,7 @@ text-align: center;
 /*media queries*/
 
 @media screen and (max-width: 1021px) {
-	#navbar #words {
+	#navbar .words {
 	font-size: 1em;
 	margin-top: 25px;
 }
@@ -191,7 +191,7 @@ text-align: center;
 .navbar-header h1 {
 	font-size: 26px;
 }
-	#navbar #words {
+	#navbar .words {
 	font-size: .9em;
 	margin-top: 15px;
 }
@@ -200,7 +200,7 @@ text-align: center;
 
 
 @media screen and (max-width: 767px) {
-	#navbar #words {
+	#navbar .words {
 	font-size: 1.5em;
 	margin-top: 0;
 }
